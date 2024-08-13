@@ -33,8 +33,8 @@ try {
   return (
     <div>
         <div>
-            <div>
-                <img width={"84px"} src="https://tse2.mm.bing.net/th?id=OIP.1lm9KjprReA8-CMRPriawgAAAA&pid=Api&P=0&h=180"/>
+            <div className='ml-8'>
+                <img width={"84px"} src="logo.jpg"/>
             </div>
             <div className='my-4'>
                 <Link to="/" className='flex items-center px-4 py-2 my-2 hover:bg-gray-100 hover:rounded-full cursor-pointer'>

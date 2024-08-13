@@ -75,13 +75,13 @@ const Login = () => {
         <div>
           <img
             className='ml-5'
-            width={"524px"}
-            src="https://tse2.mm.bing.net/th?id=OIP.1lm9KjprReA8-CMRPriawgAAAA&pid=Api&P=0&h=180"
+            width={"324px"}
+            src="logo.jpg"
             alt="Illustration"
           />
         </div>
-        <div className='my-5'>
-          <h1 className='font-bold text-5xl my-4'>Happening now</h1>
+        <div className='my-8 p-8 w-[450px] h-full bg-purple-100 border-4 rounded-xl'>
+          {/* <h1 className='font-bold text-5xl my-4'>Happening now</h1> */}
           <form onSubmit={submitHandler} className='flex flex-col'>
             {!isLogin && (
               <>
@@ -90,14 +90,14 @@ const Login = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder='Name'
-                  className='border border-gray-700 outline-blue-400 rounded-full px-4 py-1 my-2'
+                  className='border border-gray-700 outline-purple-400 rounded-full px-4 py-1 my-2'
                 />
                 <input
                   type='text'
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
                   placeholder='Username'
-                  className='border border-gray-700 outline-blue-400 rounded-full px-4 py-1 my-2'
+                  className='border border-gray-700 outline-purple-400 rounded-full px-4 py-1 my-2'
                 />
               </>
             )}
@@ -106,7 +106,7 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder='Email'
-              className='border border-gray-700 outline-blue-400 rounded-full px-4 py-1 my-2'
+              className='border border-gray-700 outline-purple-400 rounded-full px-4 py-1 my-2'
             />
             <input
               type='password'
@@ -118,7 +118,7 @@ const Login = () => {
             <button className='bg-[#8E24AA] px-3 py-1 my-2 border-none rounded-full text-lg text-white'>
               {isLogin ? "Login" : "Create Account"}
             </button>
-            <h1>
+            <h1 className='ml-16'>
               {isLogin ? "Do not have an account? " : "Already have an account?"}
               <span className='cursor-pointer font-bold text-purple-500' onClick={loginSignupHandler}>
                 {isLogin ? "Register" : "Login"}
